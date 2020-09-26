@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HappyHack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.bxslider').bxSlider({
+                mode: "fade",
+                auto: true,
+                controls: false,
+                pager: false,
+            });
+
+            $(window).on('resize', function() {
+                var windowWidth = $(window).width();
+                $('.bxslider li').width(windowWidth)
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="firstview">
+
+        <div class="bg-slider">
+            <nav>
+                <ul>
+                    <li><a class="" href="#Introduction">Introduction</a></li>
+                    <li><a class="" href="#Courses">Courses</a></li>
+                    <li><a href="#Images">Images</a></li>
+                    <li><a href="#Access">Access</a></li>
+                </ul>
+            </nav>
+
+            <img class="title" src="images/logo.png" alt="">
+            <h1 class="subtitle">We are Web Designers.</h1>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="jquery.bgswitcher.js"></script>
+        <script>
+        jQuery(function($) {
+            $('.bg-slider').bgSwitcher({
+                images: ['images/hero.jpg','images/background2.jpg','images/background3.jpg','images/background4.jpg','images/background5.jpg'], // 切り替える背景画像を指定
+            });
+        });
+        </script>
+        
+    </div>
+
+    <div id="Introduction">
+        <h2>Introduction</h2>
+        <div class="one">
+            <div class="left">
+                <img class="sashie" src="images/introduction_001.jpg" alt="">
+            </div>
+            <div class="right">
+                <p>
+                    Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
+                    特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
+                    誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。
+                </p>
+                <br>
+                <a class="touroku" href="">会員登録</a>
+            </div>
+        </div>
+        <div class="two">
+            <div class="left">
+                <p>
+                    Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
+                    WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+                    自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
+                </p>
+    
+                <a class="touroku" href="">会員登録</a>
+            </div>
+            <div class="right">
+                <img src="images/introduction_002.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="Courses">
+        <div id="hoge">
+        </div>
+        <div class="content">
+            <h2>Courses</h2>
+            <div class="col-2_html">
+                <div class="image">
+                    <img src="images/html.png" alt="">
+                </div>
+                <h3>HTMLコース</h3>
+                <a class="touroku" href="">このコースを受ける</a>
+            </div>
+            <div class="col-2_css">
+                <div class="image">
+                    <img src="images/css.png" alt="">
+                </div>
+                <h3>CSSコース</h3>
+                <a class="touroku" href="">このコースを受ける</a>
+            </div>
+            <div class="col-2_unity">
+                <div class="image">
+                    <img src="images/unity.png" alt="">
+                </div>
+                <h3>Unityコース</h3>
+                <a class="touroku" href="">このコースを受ける</a>
+            </div>
+            <div class="col-2_ruby">
+                <div class="image">
+                    <img src="images/ruby.png" alt="">
+                </div>
+                <h3>Rubyコース</h3>
+                <a class="touroku" href="">このコースを受ける</a>
+            </div>
+            <div class="col-2_js">
+                <div class="image">
+                    <img src="images/js.png" alt="">
+                </div>
+                <h3>Javascriptコース</h3>
+                <a class="touroku" href="">このコースを受ける</a>
+            </div>
+            <div class="col-2_swift">
+                <div class="image">
+                    <img src="images/swift.png" alt="">
+                </div>
+                <h3>Swiftコース</h3>
+                <a class="touroku" href="">このコースを受ける</a>
+            </div>
+            <div class="col-2_go">
+                <div class="image">
+                    <img src="images/go.png" alt="">
+                </div>
+                <h3>Goコース</h3>
+                <a class="touroku" href="">このコースを受ける</a>
+            </div>
+        </div>
+        <script src="particles.js"></script>
+        <script src="setting.js"></script>
+    </div>
+    <script src="particles.js"></script>
+    <script src="setting.js"></script>
+
+    <div id="Images">
+        <h2>Images</h2>
+        <ul class="slider">
+            <li><img src="images/hero.jpg" alt="image01"></li>
+            <li><img src="images/background2.jpg" alt="image02"></li>
+            <li><img src="images/background3.jpg" alt="image03"></li>
+            <li><img src="images/background4.jpg" alt="image04"></li>
+            <li><img src="images/background5.jpg" alt="image05"></li>
+        </ul>
+    </div>
+    <link href="slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+
+    <div id="Access">
+        <h2>Access</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3129539477495!2d135.49025991500383!3d34.697285690909304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1601086205535!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2019 Happy Hack Inc.</p>
+    </footer>
+
+</body></html>
