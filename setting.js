@@ -66,7 +66,7 @@ particlesJS('hoge',{
         "speed":10, //シェイプの動くスピード
         "straight":false, //個々のシェイプの動きを止めるか否か
         "direction":"none", //エリア全体の動き(none、top、top-right、right、bottom-right、bottom、bottom-left、left、top-leftより選択)
-        "out_mode":"out" //エリア外に出たシェイプの動き(out、bounceより選択)
+        "out_mode":"bounce" //エリア外に出たシェイプの動き(out、bounceより選択)
       }
 //--------------------
 
@@ -78,7 +78,7 @@ particlesJS('hoge',{
 
 //--マウスオーバー時の処理----------
         "onhover":{
-          "enable":true, //マウスオーバーが有効か否か
+          "enable":false, //マウスオーバーが有効か否か
           "mode":"repulse" //マウスオーバー時に発動する動き(下記modes内のgrab、repulse、bubbleより選択)
         },
 //--------------------
