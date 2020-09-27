@@ -23,6 +23,23 @@
             });
         });
     </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.fuwat').css('visibility', 'hidden');
+            $(window).scroll(function() {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('.fuwat').each(function() {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -44,16 +61,16 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <script src="jquery.bgswitcher.js"></script>
         <script>
-        jQuery(function($) {
-            $('.bg-slider').bgSwitcher({
-                images: ['images/hero.jpg','images/background2.jpg','images/background3.jpg','images/background4.jpg','images/background5.jpg'], // 切り替える背景画像を指定
+            jQuery(function($) {
+                $('.bg-slider').bgSwitcher({
+                    images: ['images/hero.jpg', 'images/background2.jpg', 'images/background3.jpg', 'images/background4.jpg', 'images/background5.jpg'], // 切り替える背景画像を指定
+                });
             });
-        });
         </script>
-        
+
     </div>
 
-    <div id="Introduction">
+    <div id="Introduction" class="fuwat">
         <h2>Introduction</h2>
         <div class="one">
             <div class="left">
@@ -76,7 +93,7 @@
                     WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
                     自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
                 </p>
-    
+
                 <a class="touroku" href="">会員登録</a>
             </div>
             <div class="right">
@@ -84,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div id="Courses">
+    <div id="Courses" class="fuwat">
         <div id="hoge">
         </div>
         <div class="content">
@@ -145,7 +162,7 @@
     <script src="particles.js"></script>
     <script src="setting.js"></script>
 
-    <div id="Images">
+    <div id="Images" class="fuwat">
         <h2>Images</h2>
         <ul class="slider">
             <li><img src="images/hero.jpg" alt="image01"></li>
@@ -161,7 +178,7 @@
     <script type="text/javascript" src="slick.min.js"></script>
     <script type="text/javascript" src="slick.js"></script>
 
-    <div id="Access">
+    <div id="Access" class="fuwat">
         <h2>Access</h2>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3129539477495!2d135.49025991500383!3d34.697285690909304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1601086205535!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
