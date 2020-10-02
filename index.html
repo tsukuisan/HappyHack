@@ -39,7 +39,7 @@
         });
     </script>
     <link rel="icon" href="images/favicon.ico" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -87,73 +87,75 @@
             </div>
         </div>
         <div class="two">
-            <div class="left">
-                <p>
-                    Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
-                    WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
-                    自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
-                </p>
-
-                <a class="touroku" href="">会員登録</a>
+            <div class="intro_2 order2">
+                <div class="left">
+                    <p>
+                        Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
+                        WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+                        自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。
+                    </p>
+                        <a class="touroku link" href="">会員登録</a>
+                </div>
             </div>
-            <div class="right">
-                <img src="images/introduction_002.jpg" alt="">
+            <div class="right order1">
+                <img class="sashie" src="images/introduction_002.jpg" alt="">
             </div>
         </div>
     </div>
     <div id="Courses" class="fuwat">
-        <div id="hoge">
-        </div>
+        <div id="hoge"></div>
         <div class="content">
             <h2>Courses</h2>
-            <div class="col-2_html">
-                <div class="image">
-                    <img src="images/html.png" alt="">
+            <div class="lineup">
+                <div class="col-2_html">
+                    <div class="image">
+                        <img src="images/html.png" alt="">
+                    </div>
+                    <h3>HTMLコース</h3>
+                    <a class="touroku" href="">このコースを受ける</a>
                 </div>
-                <h3>HTMLコース</h3>
-                <a class="touroku" href="">このコースを受ける</a>
-            </div>
-            <div class="col-2_css">
-                <div class="image">
-                    <img src="images/css.png" alt="">
+                <div class="col-2_css">
+                    <div class="image">
+                        <img src="images/css.png" alt="">
+                    </div>
+                    <h3>CSSコース</h3>
+                    <a class="touroku" href="">このコースを受ける</a>
                 </div>
-                <h3>CSSコース</h3>
-                <a class="touroku" href="">このコースを受ける</a>
-            </div>
-            <div class="col-2_unity">
-                <div class="image">
-                    <img src="images/unity.png" alt="">
+                <div class="col-2_unity">
+                    <div class="image">
+                        <img src="images/unity.png" alt="">
+                    </div>
+                    <h3>Unityコース</h3>
+                    <a class="touroku" href="">このコースを受ける</a>
                 </div>
-                <h3>Unityコース</h3>
-                <a class="touroku" href="">このコースを受ける</a>
-            </div>
-            <div class="col-2_ruby">
-                <div class="image">
-                    <img src="images/ruby.png" alt="">
+                <div class="col-2_ruby">
+                    <div class="image">
+                        <img src="images/ruby.png" alt="">
+                    </div>
+                    <h3>Rubyコース</h3>
+                    <a class="touroku" href="">このコースを受ける</a>
                 </div>
-                <h3>Rubyコース</h3>
-                <a class="touroku" href="">このコースを受ける</a>
-            </div>
-            <div class="col-2_js">
-                <div class="image">
-                    <img src="images/js.png" alt="">
+                <div class="col-2_js">
+                    <div class="image">
+                        <img src="images/js.png" alt="">
+                    </div>
+                    <h3>Javascriptコース</h3>
+                    <a class="touroku" href="">このコースを受ける</a>
                 </div>
-                <h3>Javascriptコース</h3>
-                <a class="touroku" href="">このコースを受ける</a>
-            </div>
-            <div class="col-2_swift">
-                <div class="image">
-                    <img src="images/swift.png" alt="">
+                <div class="col-2_swift">
+                    <div class="image">
+                        <img src="images/swift.png" alt="">
+                    </div>
+                    <h3>Swiftコース</h3>
+                    <a class="touroku" href="">このコースを受ける</a>
                 </div>
-                <h3>Swiftコース</h3>
-                <a class="touroku" href="">このコースを受ける</a>
-            </div>
-            <div class="col-2_go">
-                <div class="image">
-                    <img src="images/go.png" alt="">
+                <div class="col-2_go">
+                    <div class="image">
+                        <img src="images/go.png" alt="">
+                    </div>
+                    <h3>Goコース</h3>
+                    <a class="touroku" href="">このコースを受ける</a>
                 </div>
-                <h3>Goコース</h3>
-                <a class="touroku" href="">このコースを受ける</a>
             </div>
         </div>
         <script src="particles.js"></script>
@@ -180,8 +182,11 @@
 
     <div id="Access" class="fuwat">
         <h2>Access</h2>
-        <div class="map">
+        <div class="map_pc">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3129539477495!2d135.49025991500383!3d34.697285690909304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1601086205535!5m2!1sja!2sjp" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="map_sp">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3129539477495!2d135.49025991500383!3d34.697285690909304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1601086205535!5m2!1sja!2sjp" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
 

@@ -134,8 +134,10 @@ img {
 }
 
 .two {
-    display: inline-block;
+    display: inline-flex;
+    margin: 0 auto;
 }
+
 
 .two .left {
     margin: 20px;
@@ -361,8 +363,6 @@ h3 {
     height: 940px;
     margin: 0 auto;
     position: absolute;
-    top: 1680px;
-    z-index: -1px;
 }
 
 .slider {
@@ -394,8 +394,14 @@ h3 {
     text-align: center;
 }
 
-.map {
+.map_pc {
     margin: 0 auto 50px auto;
+    width: 600px;
+    height: 400px;
+}
+
+.map_sp {
+    display: none;
 }
 
 footer p {
@@ -458,6 +464,291 @@ footer p {
         transform: translateY(-20px);
     }
 
-    100% {
-        opacity: 1;
-        -webkit-trans
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); }
+}
+
+
+    /*---ここからメディアクエリ(多分)---*/
+
+@media screen and (max-width:479px){
+    /* ここにスマホ版のCSSを書いていくよ */
+    
+    nav {
+        width: 100vw;
+        display: none;
+    }
+    
+    nav ul li{
+        width: 100vw;
+        left: 10px;
+    }
+    
+    .title{
+        position: absolute;
+        left: 26%;
+        top: 45%;
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    .subtitle{
+        width: 300px;
+        font-size: 20px;
+        top: 55%;
+        left: 16%;
+        letter-spacing: normal;
+    }
+    
+    h2{
+        font-size: 200%;
+    }
+    
+    .one{
+        width: 100vw;
+    }
+    
+    .left{
+        width: 100vw;
+    }
+    
+    .sashie{
+        width: 80vw;
+    }
+    
+    .right{
+        width: 100vw;
+    }
+    
+    .right p{
+        font-size: 13px;
+        padding: 30px 60px;
+        line-height: normal;
+    }
+    
+    .touroku{
+        font-size:15px;
+    }
+    
+    .two .left{
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left p{
+        font-size: 13px;
+        padding: 30px 60px;
+        line-height: normal;
+    }
+    
+    .two{
+        display: flex;
+        flex-direction: column;
+    }
+    
+        
+    .two .right{
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .link{
+        width: 70px;
+        margin: 0 auto;
+        padding: 0px 40px;
+    }
+    
+    .order1{
+        order: 1;
+    }
+    
+    .order2{
+        order: 2;
+    }
+    
+    .content h2{
+        width: 100vw;
+    }
+    
+    .lineup{
+        width: 100vw;
+    }
+    
+    #Courses{
+        height: auto;
+    }
+        
+    .lineup{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
+    }
+    
+    .col-2_html {
+        position: relative;
+        background-color: #fff;
+        width: 200px;
+        height: 341px;
+        display: inline-block;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .col-2_html img {
+        width: 80px;
+    }
+
+    .col-2_html .touroku {
+        background-color: #f16529;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .col-2_css {
+        position: relative;
+        background-color: #fff;
+        width: 200px;
+        height: 341px;
+        display: inline-block;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .col-2_css img {
+        width: 80px;
+    }
+
+    .col-2_css .touroku {
+        background-color: #29a9df;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .col-2_unity {
+        position: relative;
+        background-color: #fff;
+        width: 200px;
+        height: 341px;
+        display: inline-block;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .col-2_unity img {
+        width: 80px;
+    }
+
+    .col-2_unity .touroku {
+        background-color: #333333;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    
+    .col-2_ruby {
+        position: relative;
+        background-color: #fff;
+        width: 200px;
+        height: 341px;
+        display: inline-block;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .col-2_ruby img {
+        width: 80px;
+    }
+
+    .col-2_ruby .touroku {
+        background-color: #ff5252;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    
+    .col-2_js {
+        position: relative;
+        background-color: #fff;
+        width: 200px;
+        height: 341px;
+        display: inline-block;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .col-2_js img {
+        width: 80px;
+    }
+
+    .col-2_js .touroku {
+        background-color: #fed700;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .col-2_swift {
+        position: relative;
+        background-color: #fff;
+        width: 200px;
+        height: 341px;
+        display: inline-block;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .col-2_swift img {
+        width: 80px;
+    }
+
+    .col-2_swift .touroku {
+        background-color: #fe5736;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .col-2_go {
+        position: relative;
+        background-color: #fff;
+        width: 200px;
+        height: 341px;
+        display: inline-block;
+        margin: 20px 10px 10px;
+        text-align: center;
+    }
+
+    .col-2_go img {
+        width: 80px;
+    }
+
+    .col-2_go .touroku {
+        background-color: #73CDDD;
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    
+    .map_pc{
+        display: none;
+    }
+    
+    .map_sp{
+        display: block;
+    }
+    
+    .content{
+        width: 100vw;
+    }
+    
+    #hoge{
+        height: 1600px;
+    }
+}
