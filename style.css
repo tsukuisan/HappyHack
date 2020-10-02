@@ -592,7 +592,7 @@ footer p {
     .col-2_html {
         position: relative;
         background-color: #fff;
-        width: 200px;
+        width: 150px;
         height: 341px;
         display: inline-block;
         margin: 20px 10px 10px;
@@ -605,7 +605,7 @@ footer p {
 
     .col-2_html .touroku {
         background-color: #f16529;
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px 20px;
         border-radius: 20px;
     }
@@ -613,7 +613,7 @@ footer p {
     .col-2_css {
         position: relative;
         background-color: #fff;
-        width: 200px;
+        width: 150px;
         height: 341px;
         display: inline-block;
         margin: 20px 10px 10px;
@@ -626,7 +626,7 @@ footer p {
 
     .col-2_css .touroku {
         background-color: #29a9df;
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px 20px;
         border-radius: 20px;
     }
@@ -634,7 +634,7 @@ footer p {
     .col-2_unity {
         position: relative;
         background-color: #fff;
-        width: 200px;
+        width: 150px;
         height: 341px;
         display: inline-block;
         margin: 20px 10px 10px;
@@ -647,7 +647,7 @@ footer p {
 
     .col-2_unity .touroku {
         background-color: #333333;
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px 20px;
         border-radius: 20px;
     }
@@ -655,7 +655,7 @@ footer p {
     .col-2_ruby {
         position: relative;
         background-color: #fff;
-        width: 200px;
+        width: 150px;
         height: 341px;
         display: inline-block;
         margin: 20px 10px 10px;
@@ -668,7 +668,7 @@ footer p {
 
     .col-2_ruby .touroku {
         background-color: #ff5252;
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px 20px;
         border-radius: 20px;
     }
@@ -676,7 +676,7 @@ footer p {
     .col-2_js {
         position: relative;
         background-color: #fff;
-        width: 200px;
+        width: 150px;
         height: 341px;
         display: inline-block;
         margin: 20px 10px 10px;
@@ -689,7 +689,7 @@ footer p {
 
     .col-2_js .touroku {
         background-color: #fed700;
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px 20px;
         border-radius: 20px;
     }
@@ -697,7 +697,7 @@ footer p {
     .col-2_swift {
         position: relative;
         background-color: #fff;
-        width: 200px;
+        width: 150px;
         height: 341px;
         display: inline-block;
         margin: 20px 10px 10px;
@@ -710,7 +710,7 @@ footer p {
 
     .col-2_swift .touroku {
         background-color: #fe5736;
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px 20px;
         border-radius: 20px;
     }
@@ -718,7 +718,7 @@ footer p {
     .col-2_go {
         position: relative;
         background-color: #fff;
-        width: 200px;
+        width: 150px;
         height: 341px;
         display: inline-block;
         margin: 20px 10px 10px;
@@ -731,7 +731,7 @@ footer p {
 
     .col-2_go .touroku {
         background-color: #73CDDD;
-        font-size: 13px;
+        font-size: 10px;
         padding: 10px 20px;
         border-radius: 20px;
     }
@@ -741,7 +741,7 @@ footer p {
     }
     
     .map_sp{
-        display: block;
+        display: inline-flex;
     }
     
     .content{
